@@ -1,0 +1,29 @@
+{
+	"name": "@btakita/ui--browser--blog",
+	"type": "module",
+	"version": "0.0.0",
+	"types": "./index.ts",
+	"exports": {
+		".": "./index.ts",
+		"./header": "./header/index.ts",
+		"./theme": "./theme/index.ts",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"*.d.ts",
+		"*.js",
+		"*.json"
+	],
+	"dependencies": {
+		"@btakita/domain--any--blog": "workspace:*",
+		"@btakita/domain--browser--blog": "workspace:*",
+		"ctx-core": "^5.36.0",
+		"rmemo": "^0.40.3"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.3.3"
+	}
+}
