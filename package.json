@@ -17,8 +17,8 @@
 	"dependencies": {
 		"@btakita/domain--any--blog": "workspace:*",
 		"@btakita/domain--browser--blog": "workspace:*",
-		"ctx-core": "^5.36.2",
-		"rmemo": "^0.40.5"
+		"ctx-core": "^5.36.4",
+		"rmemo": "^0.40.7"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
