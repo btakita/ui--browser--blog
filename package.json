@@ -22,10 +22,10 @@
 		"@btakita/domain--any--blog": "workspace:*",
 		"@btakita/domain--browser--blog": "workspace:*",
 		"@btakita/ui--any--blog": "workspace:*",
-		"ctx-core": "^5.38.0",
+		"ctx-core": "^5.38.1",
 		"fuse.js": "^7.0.0",
-		"relementjs": "^0.64.0",
-		"rmemo": "^0.42.0"
+		"relementjs": "^0.64.1",
+		"rmemo": "^0.42.1"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
