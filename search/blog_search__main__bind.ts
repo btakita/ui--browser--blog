@@ -1,6 +1,6 @@
 /// <reference lib="dom" />
-import { dehydrated_post_meta_a1__set, type dehydrated_post_meta_T } from '@btakita/domain--any--blog'
-import { browser_ctx } from '@btakita/domain--browser--blog/ctx'
+import { browser_ctx } from '@rappstack/domain--browser--blog/ctx'
+import { dehydrated_post_meta_a1__set, type dehydrated_post_meta_T } from '@rappstack/domain--any--blog'
 import { attach } from 'relementjs'
 import { blog_search__div_ } from './blog_search__div.js'
 export function blog_search__main__bind(blog_search__main:HTMLElement) {

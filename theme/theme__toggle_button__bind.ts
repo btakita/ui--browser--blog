@@ -1,6 +1,6 @@
 /// <reference lib="dom" />
-import { theme_, theme__toggle } from '@btakita/domain--any--blog'
-import { browser_ctx } from '@btakita/domain--browser--blog/ctx'
+import { browser_ctx } from '@rappstack/domain--browser--blog/ctx'
+import { theme_, theme__toggle } from '@rappstack/domain--any--blog'
 import { type circular_memo_T, memo_ } from 'rmemo'
 export function theme__toggle_button__bind(
 	theme_toggle_button:HTMLButtonElement&{

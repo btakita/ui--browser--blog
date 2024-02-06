@@ -4,8 +4,8 @@ import {
 	type dehydrated_post_meta_T,
 	post__path__new,
 	type root_ctx_T
-} from '@btakita/domain--any--blog'
-import { blog_card__li_ } from '@btakita/ui--any--blog/card'
+} from '@rappstack/domain--any--blog'
+import { blog_card__li_ } from '@rappstack/ui--any--blog/card'
 import { class_ } from 'ctx-core/html'
 import Fuse, { type FuseResult } from 'fuse.js'
 import { memo_, type relement_env_T, sig_ } from 'relementjs'
