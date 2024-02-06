@@ -1,8 +1,27 @@
 {
-	"name": "@btakita/ui--browser--blog",
+	"name": "@rappstack/ui--browser--blog",
 	"type": "module",
 	"version": "0.0.0",
 	"types": "./index.ts",
+	"description": "UI library targeting the browser for blogs",
+	"keywords": [
+		"rappstack",
+		"reactive",
+		"full-stack",
+		"ui",
+		"browser",
+		"blog"
+	],
+	"homepage": "https://github.com/rappstack/ui--browser--blog",
+	"bugs": {
+		"url": "https://github.com/rappstack/ui--browser--blog/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rappstack/ui--browser--blog.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
 	"exports": {
 		".": "./index.ts",
 		"./header": "./header/index.ts",
@@ -19,9 +38,9 @@
 		"*.json"
 	],
 	"dependencies": {
-		"@btakita/domain--any--blog": "workspace:*",
-		"@btakita/domain--browser--blog": "workspace:*",
-		"@btakita/ui--any--blog": "workspace:*",
+		"@rappstack/domain--any--blog": "workspace:*",
+		"@rappstack/domain--browser--blog": "workspace:*",
+		"@rappstack/ui--any--blog": "workspace:*",
 		"ctx-core": "^5.38.1",
 		"fuse.js": "^7.0.0",
 		"relementjs": "^0.64.1",
