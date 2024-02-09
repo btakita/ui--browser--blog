@@ -3,18 +3,17 @@ import {
 	dehydrated_post_meta_a1_,
 	type dehydrated_post_meta_T,
 	post__path__new,
-	type root_ctx_T
 } from '@rappstack/domain--any--blog'
 import { blog_card__li_ } from '@rappstack/ui--any--blog/card'
 import { class_ } from 'ctx-core/html'
 import Fuse, { type FuseResult } from 'fuse.js'
-import { memo_, type relement_env_T, sig_ } from 'relementjs'
+import { memo_, type relement_env_T, sig_, type wide_ctx_T } from 'relementjs'
 import { div_, input_, label_, span_, ul_ } from 'relementjs/html'
 import { item_list_ } from 'relementjs/isomorphic'
 import { path_, svg_ } from 'relementjs/svg'
 export function blog_search__div_<env_T extends relement_env_T>({
 		ctx
-	}:{ ctx:root_ctx_T }
+	}:{ ctx:wide_ctx_T }
 ) {
 	const search__input$ = sig_<HTMLInputElement|undefined>(undefined)
 	const input__value$ = sig_('')
