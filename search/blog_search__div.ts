@@ -1,9 +1,7 @@
 /// <reference lib="dom" />
-import {
-	dehydrated_post_meta_a1_,
-	type dehydrated_post_meta_T,
-	post__path__new,
-} from '@rappstack/domain--any--blog'
+import { dehydrated_post_meta_a1_, type dehydrated_post_meta_T,
+} from '@rappstack/domain--any--blog/post'
+import { post__path__new } from '@rappstack/domain--any--blog/slug'
 import { blog_card__li_ } from '@rappstack/ui--any--blog/card'
 import { class_ } from 'ctx-core/html'
 import Fuse, { type FuseResult } from 'fuse.js'
