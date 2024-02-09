@@ -12,9 +12,8 @@ import { div_, input_, label_, span_, ul_ } from 'relementjs/html'
 import { item_list_ } from 'relementjs/isomorphic'
 import { path_, svg_ } from 'relementjs/svg'
 export function blog_search__div_<env_T extends relement_env_T>({
-		ctx
-	}:{ ctx:wide_ctx_T }
-) {
+	ctx
+}:{ ctx:wide_ctx_T }) {
 	const search__input$ = sig_<HTMLInputElement|undefined>(undefined)
 	const input__value$ = sig_('')
 	const highlight__idx$ = sig_(0)
