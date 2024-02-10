@@ -43,7 +43,7 @@
 		"@rappstack/ui--any--blog": "workspace:*",
 		"ctx-core": "^6.1.2",
 		"fuse.js": "^7.0.0",
-		"relementjs": "^0.70.0",
+		"relementjs": "^0.70.1",
 		"rmemo": "^0.44.2"
 	},
 	"devDependencies": {
