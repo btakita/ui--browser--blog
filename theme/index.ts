@@ -1,1 +1,1 @@
-export * from './theme__toggle_button__bind.js'
+export * from './theme__toggle_button__hyop.js'

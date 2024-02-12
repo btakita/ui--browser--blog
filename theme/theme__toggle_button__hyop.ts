@@ -2,7 +2,7 @@
 import { browser_ctx__ensure } from '@rappstack/domain--browser/ctx'
 import { theme_, theme__toggle } from '@rappstack/domain--any--blog/theme'
 import { type circular_memo_T, memo_ } from 'rmemo'
-export function theme__toggle_button__bind(
+export function theme__toggle_button__hyop(
 	theme_toggle_button:HTMLButtonElement&{
 		_aria_label$?:circular_memo_T
 	}
