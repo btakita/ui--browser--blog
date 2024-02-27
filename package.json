@@ -25,8 +25,11 @@
 	"exports": {
 		".": "./index.ts",
 		"./header": "./header/index.ts",
+		"./header/hyop": "./header/hyop/index.ts",
 		"./search": "./search/index.ts",
+		"./search/hyop": "./search/hyop/index.ts",
 		"./theme": "./theme/index.ts",
+		"./theme/hyop": "./theme/hyop/index.ts",
 		"./package.json": "./package.json"
 	},
 	"files": [

@@ -1,1 +1,1 @@
-export * from './blog__header__hyop.js'
+export * from './hyop/index.js'
