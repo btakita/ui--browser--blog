@@ -15,7 +15,7 @@ export function code_copy_button__hyop(parent:HTMLElement) {
 			button.appendChild(icon__template.content.cloneNode(true))
 			pre.setAttribute('tabindex', '0')
 			pre.appendChild(button)
-			// wrap codebock with relative parent element
+			// wrap pre with relative parent element
 			pre?.parentNode?.insertBefore(wrapper, pre)
 			wrapper.appendChild(pre)
 			button.addEventListener('click', ()=>code__copy(pre, button))
