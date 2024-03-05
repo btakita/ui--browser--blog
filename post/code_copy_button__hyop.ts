@@ -18,9 +18,6 @@ export function code_copy_button__hyop(parent:HTMLElement) {
 			// wrap codebock with relative parent element
 			pre?.parentNode?.insertBefore(wrapper, pre)
 			wrapper.appendChild(pre)
-			console.debug('code_copy_button__hyop|debug|1', {
-				pre
-			})
 			button.addEventListener('click', ()=>code__copy(pre, button))
 		}
 	})
