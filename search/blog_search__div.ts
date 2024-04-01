@@ -23,8 +23,8 @@ export function blog_search__div_<env_T extends relement_env_T>({
 		}))
 	const search_result_a$ = memo_<
 		FuseResult<dehydrated_post_meta_T>[]
-	>(()=>[])
-		.add(search_result_a$=>
+	>(()=>[], [
+		search_result_a$=>
 			memo_(()=>{
 				// Add search result only if
 				// input value is more than one character
@@ -32,7 +32,7 @@ export function blog_search__div_<env_T extends relement_env_T>({
 					input__value$().length > 1
 						? fuse$().search(input__value$())
 						: []
-				search_result_a$._ = search_result_a
+				search_result_a$.set(search_result_a)
 				// Update search string in URL
 				if (input__value$().length > 0) {
 					const searchParams = new URLSearchParams(window.location.search)
@@ -43,7 +43,8 @@ export function blog_search__div_<env_T extends relement_env_T>({
 				} else {
 					history.replaceState(history.state, '', window.location.pathname)
 				}
-			}))
+			})
+	])
 	const search_result_a__length$ = memo_(()=>
 		search_result_a$().length)
 	input__init()
@@ -60,7 +61,7 @@ export function blog_search__div_<env_T extends relement_env_T>({
 		// insert that search query in input field
 		const search_url = new URLSearchParams(window.location.search)
 		const search_str = search_url.get('q')
-		if (search_str) input__value$._ = search_str
+		if (search_str) input__value$.set(search_str)
 		// put focus cursor at the end of the string
 		setTimeout(()=>{
 			search__input$()!.selectionStart = search__input$()!.selectionEnd =
@@ -162,7 +163,7 @@ export function blog_search__div_<env_T extends relement_env_T>({
 				autocomplete: 'off',
 				autofocus: true,
 			})
-		search__input$._ = input
+		search__input$.set(input)
 		return input
 	}
 	function input__onkeydown(e:KeyboardEvent&{
@@ -171,11 +172,11 @@ export function blog_search__div_<env_T extends relement_env_T>({
 		switch (true) {
 			case e.key === 'ArrowDown':
 				e.preventDefault()
-				highlight__idx$._ = (highlight__idx$() + 1) % search_result_a$().length
+				highlight__idx$.set((highlight__idx$() + 1) % search_result_a$().length)
 				break
 			case e.key === 'ArrowUp':
 				e.preventDefault()
-				highlight__idx$._ = (highlight__idx$() + search_result_a$().length - 1) % search_result_a$().length
+				highlight__idx$.set((highlight__idx$() + search_result_a$().length - 1) % search_result_a$().length)
 				break
 			case e.key === 'Enter':
 				e.preventDefault()
@@ -186,6 +187,6 @@ export function blog_search__div_<env_T extends relement_env_T>({
 	function input__oninput(e:KeyboardEvent&{
 		target:HTMLInputElement
 	}) {
-		input__value$._ = e.target.value
+		input__value$.set(e.target.value)
 	}
 }
