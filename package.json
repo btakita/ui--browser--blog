@@ -24,6 +24,8 @@
 	"author": "Brian Takita",
 	"exports": {
 		".": "./index.ts",
+		"./footnote": "./footnote/index.ts",
+		"./footnote/hyop": "./footnote/hyop/index.ts",
 		"./header": "./header/index.ts",
 		"./header/hyop": "./header/hyop/index.ts",
 		"./post": "./post/index.ts",
@@ -37,6 +39,7 @@
 	"files": [
 		"*.d.ts",
 		"*.js",
+		"footnote",
 		"header",
 		"post",
 		"search",
