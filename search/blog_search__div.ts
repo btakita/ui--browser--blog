@@ -1,6 +1,9 @@
 /// <reference lib="dom" />
-import { dehydrated_post_meta_a1_, type dehydrated_post_meta_T, } from '@rappstack/domain--any--blog/post'
-import { post__path__new } from '@rappstack/domain--any--blog/slug'
+import {
+	dehydrated_post_meta_a1_,
+	type dehydrated_post_meta_T,
+	post_path__new,
+} from '@rappstack/domain--any--blog/post'
 import { blog_card__li_ } from '@rappstack/ui--any--blog/card'
 import { class_ } from 'ctx-core/html'
 import Fuse, { type FuseResult } from 'fuse.js'
@@ -8,9 +11,9 @@ import { memo_, type relement_env_T, sig_, type wide_ctx_T } from 'relementjs'
 import { div_, input_, label_, span_, ul_ } from 'relementjs/html'
 import { item_list_ } from 'relementjs/isomorphic'
 import { path_, svg_ } from 'relementjs/svg'
-export function blog_search__div_<env_T extends relement_env_T>({
-	ctx
-}:{ ctx:wide_ctx_T }) {
+type blog_search__div_props_T = { ctx:wide_ctx_T }
+export function blog_search__div_<env_T extends relement_env_T>($p:blog_search__div_props_T) {
+	const { ctx } = $p
 	const search__input$ = sig_<HTMLInputElement|undefined>(undefined)
 	const input__value$ = sig_('')
 	const highlight__idx$ = sig_(0)
@@ -126,7 +129,7 @@ export function blog_search__div_<env_T extends relement_env_T>({
 			(dehydrated_post_meta, idx$)=>{
 				return blog_card__li_({
 					ctx,
-					href: post__path__new(dehydrated_post_meta),
+					href: post_path__new(ctx, dehydrated_post_meta),
 					class: ()=>
 						class_(
 							idx$() === highlight__idx$()
@@ -180,7 +183,7 @@ export function blog_search__div_<env_T extends relement_env_T>({
 				break
 			case e.key === 'Enter':
 				e.preventDefault()
-				window.location.href = post__path__new(search_result_a$()[highlight__idx$()].item)
+				window.location.href = post_path__new(ctx, search_result_a$()[highlight__idx$()].item)
 				break
 		}
 	}
