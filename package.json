@@ -50,10 +50,10 @@
 		"@rappstack/domain--any--blog": "workspace:*",
 		"@rappstack/domain--browser": "workspace:*",
 		"@rappstack/ui--any--blog": "workspace:*",
-		"ctx-core": "^7.2.8",
+		"ctx-core": "^7.2.9",
 		"fuse.js": "^7.0.0",
-		"relementjs": "^0.80.8",
-		"rmemo": "^0.51.8"
+		"relementjs": "^0.80.9",
+		"rmemo": "^0.51.9"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
